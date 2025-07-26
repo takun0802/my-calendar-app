@@ -132,7 +132,7 @@ function App() {
       <h2>イベント登録</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>ユーザーID：</label>
+          <label>ユーザーID2：</label>
           <input
             name="userId"
             value={formData.userId}
