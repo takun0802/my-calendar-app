@@ -22,7 +22,7 @@ function App() {
 
   // 全イベント取得
   useEffect(() => {
-    fetch("http://18.179.45.80:32775/api/events")
+    fetch("https://18.179.45.80:32775/api/events")
       .then((res) => res.json())
       .then((data) => setEvents(data))
       .catch(console.error);
@@ -60,7 +60,7 @@ function App() {
           : null,
     };
 
-    fetch("http://18.179.45.80:32775/api/events", {
+    fetch("https://18.179.45.80:32775/api/events", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(eventToSend),
